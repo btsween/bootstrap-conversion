@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+}
+
+#content-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#sidebar {
+    height: 50%;
+    margin-bottom: auto;
+}
+
+.hidden-list-of-things {
+    display: none;
+}
+
+#to-clone {
+    border: white;
+    padding: 3%;
+}
+
+

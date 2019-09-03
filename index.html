@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversion Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="base.js"></script>
+    <link href="base.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Bootstrap Conversion Site</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row" id="content-container">
+        <nav class="navbar navbar-light bg-light fixed-left col-sm-2 d-none d-sm-block">
+            <ul id="sidebar" class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="btn btn-defualt btn-md" href="#">Tab One</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-defualt btn-md" href="#">Tab Two</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-defualt btn-md" href="#">Tab Three</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-defualt btn-md" href="#">Tab Four</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-defualt btn-md" href="#">Tab Five</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="col" id="panel">
+            <h1 class="text-center">Bootstrap Conversion</h1>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
+                        Modal</button>
+                    <button id="clone_list" value="Clone List" type="button" class="btn btn-info btn-lg">Clone
+                        List</button>
+                </div>
+            </div>
+            <div class="list-of-things row"></div>
+        </div>
+    </div>
+    <div class="hidden-list-of-things">
+        <div class="col-sm-3" id="to-clone">
+            <div class="col bg-light border">
+                <ul>
+                    <li>
+                        <p3>one</p3>
+                    </li>
+                    <li>
+                        <p3>two</p3>
+                    </li>
+                    <li>
+                        <p3>three</p3>
+                    </li>
+                    <li>
+                        <p3>four</p3>
+                    </li>
+                    <li>
+                        <p3>five</p3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">User Information</h4>
+                </div>
+                <form>
+                    <div class="form-group row mt-3">
+                        <label class="col-3 text-center" for="first-name">First Name</label>
+                        <input type="text" class="col-8 form-control" id="first-name">
+                    </div>
+                    <div class="form-group row mt-3">
+                        <label class="col-3 text-center" for="last-name">Last Name</label>
+                        <input type="text" class="col-8 form-control" id="last-name">
+                    </div>
+                </form>
+                <div class="dropdown row mb-3">
+                    <label class="col-3 text-center" for="car">First Car</label>
+                    <input type="button col-3" class="btn btn-primary dropdown-toggle" id="car-selection" data-toggle="dropdown" value="Choose a car" readonly>
+                    <div class="dropdown-menu">
+                        <input type="button" class="dropdown-item btn btn-info" value="Saab">
+                        <input type="button" class="dropdown-item btn btn-info" value="Vovlo">
+                        <input type="button" class="dropdown-item btn btn-info" value="Audi">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close &times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
